@@ -1,3 +1,5 @@
+![Image description](https://github.com/aurelien-alet/products-app/workflows/test-workflow/badge.svg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
