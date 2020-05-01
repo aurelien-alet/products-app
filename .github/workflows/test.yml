@@ -10,4 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello world
-        run: echo 'Hello world'
+        run: echo 'Hello world 2'
+      - name: Hello world reference
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet:  Aurélien
+        
