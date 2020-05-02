@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: 'Hello perso'
         id: 'hello'
-        uses: 'aurelien-alet/test-action-docker@latest'
+        uses: 'aurelien-alet/test-action-docker@v1'
         with:
           who-to-greet: 'Aurélien'
       - name: 'Output Time'
