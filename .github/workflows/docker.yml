@@ -1,0 +1,15 @@
+name: 'docker'
+description: 'use docker created action'
+
+jobs:
+  build:
+    name: 'Docker'
+    steps:
+      - name: 'Hello perso'
+        id: 'hello'
+        uses: 'aurelien-alet/test-action-docker'
+        with:
+          - who-to-greet: 'Aurélien'
+      - name: "Output Time'
+        run: echo 'Time : ${{ steps.hello.outputs.time }}'
+        
