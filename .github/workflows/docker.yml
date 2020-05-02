@@ -1,15 +1,16 @@
 name: 'docker'
-description: 'use docker created action'
+on: 'push'
 
 jobs:
   build:
     name: 'Docker'
+    runs-on: ubuntu-latest
     steps:
       - name: 'Hello perso'
         id: 'hello'
         uses: 'aurelien-alet/test-action-docker'
         with:
-          - who-to-greet: 'Aurélien'
-      - name: "Output Time'
-        run: echo 'Time : ${{ steps.hello.outputs.time }}'
+          who-to-greet: 'Aurélien'
+      - name: 'Output Time'
+        run: 'echo "Time : ${{ steps.hello.outputs.time }}"'
         
